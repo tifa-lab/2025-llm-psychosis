@@ -17,4 +17,4 @@ docker run --rm \
   -p 8888:8888 \
   -v "$(pwd)":/home/jovyan/work \
   quay.io/tifalab/2025-llm-psychosis:$LATEST_TAG \
-  jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --IdentityProvider.token=tifalab
+  jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --IdentityProvider.token=''
