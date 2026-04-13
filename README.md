@@ -1,6 +1,6 @@
 # Evaluation of large language model chatbot responses to psychotic prompts: analytic code
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17575242.svg)](https://doi.org/10.5281/zenodo.17575242)
+<a href="https://doi.org/10.5281/zenodo.17575242"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.17575242.svg" alt="DOI"></a>
 
 To use:
 
