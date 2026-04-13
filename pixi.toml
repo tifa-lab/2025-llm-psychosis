@@ -1,0 +1,36 @@
+[workspace]
+name = "llm-psychosis-analysis"
+channels = ["conda-forge", "https://conda.anaconda.org/ajutla"]
+platforms = ["linux-64", "linux-aarch64", "osx-arm64", "osx-64"]
+
+[dependencies]
+python = "*"
+jupyter = "*"
+jupyterlab = "*"
+
+r-base = "*"
+r-irkernel = "*"
+r-tidyverse = "*"
+r-here = "*"
+r-psych = "*"
+r-skimr = "*"
+r-broom = "*"
+"r-broom.mixed" = "*"
+"r-broom.helpers" = "*"
+r-mass = "*"
+r-brant = "*"
+r-ordinal = "*"
+r-lme4 = "*"
+r-lmertest = "*"
+r-gt = "*"
+r-gtsummary = "*"
+r-patchwork = "*"
+r-conflicted = "*"
+r-rcolorbrewer = "*"
+r-parameters = "*"
+
+[pypi-dependencies]
+jupyter-resource-usage = "*"
+
+[tasks]
+lab = "jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --ServerApp.token=tifalab"

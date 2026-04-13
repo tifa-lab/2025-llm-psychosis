@@ -1,0 +1,23 @@
+services:
+  r-notebook:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: quay.io/tifalab/2025-llm-psychosis:${TAG}
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/home/jovyan/work
+      - jupyter-config:/home/jovyan/.jupyter
+    command: jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --ServerApp.token=tifalab
+    restart: unless-stopped
+    container_name: llm-psychosis
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+        reservations:
+          memory: 2G
+
+volumes:
+  jupyter-config:

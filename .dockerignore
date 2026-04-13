@@ -1,0 +1,10 @@
+.git
+.vscode/
+.DS_Store
+*.log
+.pixi/
+output/
+.ipynb_checkpoints/
+README.md
+.env
+.env.local
